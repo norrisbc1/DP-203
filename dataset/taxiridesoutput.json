@@ -1,0 +1,21 @@
+{
+	"name": "taxiridesoutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "taxiridesoutput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "taxirides.parquet",
+				"folderPath": "output",
+				"fileSystem": "taxirides"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
